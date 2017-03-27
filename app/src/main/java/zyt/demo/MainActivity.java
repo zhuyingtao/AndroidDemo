@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import zyt.demo.service.DemoActivity;
+import zyt.demo.ui.TestNotificationActivity;
 
 public class MainActivity extends Activity {
 
@@ -35,6 +36,10 @@ public class MainActivity extends Activity {
                     case "Service":
                         startActivity(new Intent(MainActivity.this, DemoActivity.class));
                         break;
+                    case "Notification":
+                        startActivity(new Intent(MainActivity.this, TestNotificationActivity
+                                .class));
+                        break;
                 }
             }
         });
@@ -43,5 +48,6 @@ public class MainActivity extends Activity {
     public void initData() {
         mListData = new ArrayList<>();
         mListData.add("Service");
+        mListData.add("Notification");
     }
 }

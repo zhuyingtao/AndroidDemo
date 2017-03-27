@@ -19,6 +19,8 @@
         <activity android:name=".service.DemoActivity">
         </activity>
 
+        <activity android:name=".ui.TestNotificationActivity"></activity>
+
         <service android:name=".service.DemoService"/>
     </application>
 
